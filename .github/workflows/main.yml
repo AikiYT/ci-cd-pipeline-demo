@@ -1,0 +1,34 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Verificar Node.js y npm
+        run: |
+          node -v
+          npm -v
+
+      - name: Instalar dependencias
+        run: npm install --verbose
+
+      - name: Ejecutar pruebas
+        run: npm test --verbose
+
+      - name: Desplegar en GitHub Pages
+        if: success()
+        run: echo "Desplegando aplicación..."
+
