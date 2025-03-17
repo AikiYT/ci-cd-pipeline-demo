@@ -28,9 +28,8 @@
     },
     "jest": {
       "testMatch": [
-        "/text/app.test.js"
+        "/text/app.test.js"  
       ]
     }
   }
-  
 
