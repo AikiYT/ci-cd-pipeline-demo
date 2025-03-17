@@ -4,29 +4,33 @@
     "description": "practica 3 pipeline",
     "main": "index.js",
     "scripts": {
-    "start": "node index.js",
-    "test": "jest"
-},
+      "start": "node index.js",
+      "test": "jest"
+    },
     "repository": {
-        "type": "git",
-        "url": "git+https://github.com/AikiYT/ci-cd-pipeline-demo.git"
+      "type": "git",
+      "url": "git+https://github.com/AikiYT/ci-cd-pipeline-demo.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "type": "commonjs",
     "bugs": {
-        "url": "https://github.com/AikiYT/ci-cd-pipeline-demo/issues"
+      "url": "https://github.com/AikiYT/ci-cd-pipeline-demo/issues"
     },
     "homepage": "https://github.com/AikiYT/ci-cd-pipeline-demo#readme",
     "dependencies": {
-        "express": "^4.21.2"
+      "express": "^4.21.2"
     },
     "devDependencies": {
-        "jest": "^29.7.0",
-        "supertest": "^7.0.0"
+      "jest": "^29.7.0",
+      "supertest": "^7.0.0"
+    },
+    "jest": {
+      "testMatch": [
+        "**/tests/**/*.test.js"
+      ]
     }
-    
-}
-
+  }
+  
 
