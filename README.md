@@ -19,3 +19,11 @@ Este proyecto muestra cómo configurar un pipeline CI/CD con pruebas automatizad
 
    ```bash
    git clone https://github.com/tu-usuario/mi-proyecto.git
+2- Navega al directorio del proyecto:
+cd mi-proyecto
+
+3- Instala las dependencias:
+npm install
+
+4- Para ejecutar la aplicación en tu máquina local:
+npm start
